@@ -19,7 +19,7 @@ const TasksHome = () => {
                     />
                     <Task 
                         btnColor="cyan_400" 
-                        btnClass="w-[46px] mt-3" 
+                        btnClass="w-[46px]" 
                         imgSrc="images/img_support_1.svg" 
                         headingContent="Website Dev" 
                         text="Make your business more leverage by having an optimal website and we are ready to help"

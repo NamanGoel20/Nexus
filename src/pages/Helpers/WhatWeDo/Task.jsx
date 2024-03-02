@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Text, Heading, Img, Button } from "../../../components";
 
 const hoverOuterClass = "flex flex-col items-start justify-center w-[31%] gap-[34px] p-[25px] bg-white-A700 shadow-xs cursor-pointer rounded-[30px] hover:shadow-xs";
@@ -7,8 +7,14 @@ const hoverHeadingClass = "flex flex-col items-start justify-start mb-2 gap-[15p
 const normalHeadingClass = "flex flex-col items-start justify-start w-full gap-[13px]";
 
 const Task = ({btnColor, btnClass, imgSrc, headingContent, text}) => {
+    const [isHover, setIsHover] = useState(false);
     return (
-        <div className="flex flex-col items-start justify-start w-[23%] gap-9 my-[35px] cursor-pointer hover:shadow-xs">
+        <div 
+            className="flex flex-col items-start justify-start w-[23%] gap-9 my-[35px] cursor-pointer hover:shadow-xs"
+            style={{padding: "15px", backgroundColor: isHover ? "white" : "#ffecec"}}
+            onMouseEnter={() => setIsHover(true)}
+            onMouseLeave={() => setIsHover(false)}
+        >
             <Button color={btnColor} className={btnClass}>
                 <Img src={imgSrc} />
             </Button>

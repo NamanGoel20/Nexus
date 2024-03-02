@@ -13,21 +13,21 @@ export default function Footer({ ...props }) {
                 <div className="flex flex-col items-center justify-start w-[29%]">
                   <div className="flex flex-col items-start justify-start w-full">
                     <Heading size="lg" as="h5" className="ml-px !text-white-A700 tracking-[4.00px]">
-                      ABOUT
+                      OUR VALUES
                     </Heading>
                     <div className="h-0.5 w-[45%] mt-2.5 bg-deep_orange-A100" />
                     <div className="flex flex-col items-start justify-start mt-[38px] gap-[29px]">
                       <Heading as="h6" className="!text-white-A700 tracking-[0.90px] !font-semibold">
-                        About
+                        Honesty
                       </Heading>
                       <Heading as="h6" className="ml-px !text-white-A700 tracking-[0.90px] !font-semibold">
-                        What we do
+                        Reliability
                       </Heading>
                       <Heading as="h6" className="ml-px !text-white-A700 tracking-[0.90px] !font-semibold">
-                        Works
+                        Integrity
                       </Heading>
                       <Heading as="h6" className="ml-px !text-white-A700 tracking-[0.90px] !font-semibold">
-                        Testimonial
+                        Innovation
                       </Heading>
                     </div>
                   </div>
