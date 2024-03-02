@@ -2,6 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Text, Heading, Img, Button, HeaderComp } from "../../components";
 import Footer from "../../components/Footer";
+import Jumbotron from "../Helpers/Jumbotron";
+import TeamIntro from "../Helpers/TeamIntro";
 
 export default function HomepagePage() {
   return (
@@ -15,75 +17,8 @@ export default function HomepagePage() {
           <HeaderComp pageName="home"/>
           <div className="flex flex-col items-center justify-start w-full gap-[100px]">
             <div className="flex flex-col items-center justify-start w-full gap-[95px] max-w-[1181px]">
-              <div className="h-[646px] w-full relative">
-                <div className="flex flex-col items-start justify-center w-full h-full pl-[71px] pr-14 gap-[39px] left-0 bottom-0 right-0 top-0 py-[71px] m-auto bg-cyan-50 absolute rounded-[35px]">
-                  <Text as="p" className="w-[42%] mt-[245px] ml-[3px] !text-black-900_60 !leading-[35px]">
-                    Maximize your business with a variety of services and services from us
-                  </Text>
-                  <div className="flex flex-row justify-start mb-[83px] gap-6">
-                    <Button size="md" className="font-bold min-w-[201px] rounded-[5px]">
-                      Contact Us
-                    </Button>
-                    <Button size="md" variant="outline" className="font-bold min-w-[201px] rounded-[5px]">
-                      About Us
-                    </Button>
-                  </div>
-                </div>
-                <div className="flex flex-row justify-center items-start w-[94%] h-full right-0 bottom-0 top-0 m-auto absolute">
-                  <Heading size="6xl" as="h1" className="w-[55%] mt-[45px] z-[1]">
-                    <span className="text-black-900">Maximize your business with </span>
-                    <span className="text-red-400_01">us</span>
-                  </Heading>
-                  <Img src="images/img_group_665.png" alt="image_one" className="w-1/2 ml-[-44px] object-cover" />
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-start w-full gap-[33px]">
-                <div className="flex flex-row justify-between items-start w-full">
-                  <Heading size="4xl" as="h2">
-                    Meet our team
-                  </Heading>
-                  <a href="#" className="mt-[11px]">
-                    <Heading size="lg" as="h3" className="!text-red-400_01 text-right">
-                      View All
-                    </Heading>
-                  </a>
-                </div>
-                <div className="flex flex-row w-full gap-[30px]">
-                  <div className="flex flex-col items-center justify-start w-[32%] mb-1 gap-[39px]">
-                    <Img src="images/img_rectangle_16.png" alt="image" className="w-full object-cover rounded-[10px]" />
-                    <div className="flex flex-col items-center justify-start w-[44%] gap-3">
-                      <Heading size="xl" as="h4" className="!text-gray-800_01">
-                        Sarah Jae
-                      </Heading>
-                      <Text as="p" className="!text-black-900_68">
-                        Branding Specialist
-                      </Text>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-start w-[32%] gap-[35px]">
-                    <Img src="images/img_rectangle_15.png" alt="image" className="w-full object-cover rounded-[10px]" />
-                    <div className="flex flex-col items-center justify-start w-[39%] gap-3 py-1">
-                      <Heading size="xl" as="h5" className="!text-gray-800_01">
-                        John Doe
-                      </Heading>
-                      <Text as="p" className="!text-black-900_68 text-center">
-                        Product Designer
-                      </Text>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-start w-[32%] mb-[5px] gap-[39px]">
-                    <Img src="images/img_rectangle_17.png" alt="image" className="w-full object-cover rounded-[10px]" />
-                    <div className="flex flex-col items-center justify-start w-[33%] gap-3">
-                      <Heading size="xl" as="h6" className="!text-gray-800_01 text-center">
-                        Samantha
-                      </Heading>
-                      <Text as="p" className="!text-black-900_68 text-center">
-                        SEO Specialist
-                      </Text>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Jumbotron />
+              <TeamIntro />
               <div className="flex flex-col items-center justify-start w-full gap-[34px]">
                 <Heading size="4xl" as="h1">
                   What we do
