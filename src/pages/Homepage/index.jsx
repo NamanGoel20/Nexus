@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Text, Heading, Img, Button, HeaderComp } from "../../components";
 import Footer from "../../components/Footer";
-import Jumbotron from "../Helpers/Jumbotron";
+import JumbotronHome from "../Helpers/Jumbotrons/JumbotronHome";
 import TeamIntro from "../Helpers/TeamIntro";
 
 export default function HomepagePage() {
@@ -17,7 +17,7 @@ export default function HomepagePage() {
           <HeaderComp pageName="home"/>
           <div className="flex flex-col items-center justify-start w-full gap-[100px]">
             <div className="flex flex-col items-center justify-start w-full gap-[95px] max-w-[1181px]">
-              <Jumbotron />
+              <JumbotronHome />
               <TeamIntro />
               <div className="flex flex-col items-center justify-start w-full gap-[34px]">
                 <Heading size="4xl" as="h1">

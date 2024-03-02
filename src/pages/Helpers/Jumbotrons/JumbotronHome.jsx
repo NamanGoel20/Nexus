@@ -1,10 +1,10 @@
 import React from "react";
-import { Text, Heading, Img, Button } from "../../components";
+import { Text, Heading, Img, Button } from "../../../components";
 import { useNavigate } from "react-router-dom";
 
 const CONTACT="contact";
 
-const Jumbotron = (props) => {
+const JumbotronHome = (props) => {
     const navigate = useNavigate();
     const handleClick = (page) => {
         console.log("click: ",page);
@@ -33,4 +33,4 @@ const Jumbotron = (props) => {
     );
 }
 
-export default Jumbotron;
+export default JumbotronHome;
