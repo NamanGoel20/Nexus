@@ -3,7 +3,8 @@ import { Helmet } from "react-helmet";
 import { Text, Heading, Img, Button, HeaderComp } from "../../components";
 import Footer from "../../components/Footer";
 import JumbotronHome from "../Helpers/Jumbotrons/JumbotronHome";
-import TeamIntro from "../Helpers/TeamIntro";
+import TeamIntro from "../Helpers/Team/TeamIntro";
+import TasksHome from "../Helpers/WhatWeDo/TasksHome";
 
 export default function HomepagePage() {
   return (
@@ -19,55 +20,7 @@ export default function HomepagePage() {
             <div className="flex flex-col items-center justify-start w-full gap-[95px] max-w-[1181px]">
               <JumbotronHome />
               <TeamIntro />
-              <div className="flex flex-col items-center justify-start w-full gap-[34px]">
-                <Heading size="4xl" as="h1">
-                  What we do
-                </Heading>
-                <div className="flex flex-row justify-center w-full px-14 py-28 bg-red-50 rounded-[90px]">
-                  <div className="flex flex-row w-[85%] mb-1.5 gap-[102px] mx-[27px]">
-                    <div className="flex flex-col items-start justify-start w-[23%] gap-9 my-[35px] cursor-pointer hover:shadow-xs">
-                      <Button color="red_300" className="w-[46px]">
-                        <Img src="images/img_group_670.svg" />
-                      </Button>
-                      <div className="flex flex-col items-start justify-start w-full gap-[13px]">
-                        <Heading size="xl" as="h4">
-                          UIUX Design
-                        </Heading>
-                        <Text size="xs" as="p" className="!leading-[30px]">
-                          We can make your website or application design better with this service
-                        </Text>
-                      </div>
-                    </div>
-                    <div className="flex flex-col items-start justify-center w-[31%] gap-[34px] p-[25px] bg-white-A700 shadow-xs cursor-pointer rounded-[30px] hover:shadow-xs">
-                      <Button color="cyan_400" className="w-[46px] mt-3">
-                        <Img src="images/img_support_1.svg" />
-                      </Button>
-                      <div className="flex flex-col items-start justify-start mb-2 gap-[15px]">
-                        <Heading size="xl" as="h4">
-                          Website Dev
-                        </Heading>
-                        <Text size="xs" as="p" className="!leading-[30px]">
-                          Make your business more leverage by having an optimal website and we are ready to help
-                        </Text>
-                      </div>
-                    </div>
-                    <div className="flex flex-col items-start justify-start w-[27%] gap-9 my-[35px] cursor-pointer hover:shadow-xs">
-                      <Button color="lime_800" className="w-[46px]">
-                        <Img src="images/img_idea_1.svg" />
-                      </Button>
-                      <div className="flex flex-col items-start justify-start w-full gap-[13px]">
-                        <Heading size="xl" as="h4">
-                          Branding & Product
-                        </Heading>
-                        <Text size="xs" as="p" className="!leading-[30px]">
-                          we can also help you in the affairs of product branding so that your products can be more
-                          riveting
-                        </Text>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <TasksHome />
             </div>
             <div className="flex flex-row justify-center w-full">
               <div className="flex flex-col items-start justify-start w-full">

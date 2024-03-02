@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Heading, Img } from "../../components";
+import { Text, Heading, Img } from "../../../components";
 
 const TeamMember = ({memName, memPos, memPic}) => {
     return (
