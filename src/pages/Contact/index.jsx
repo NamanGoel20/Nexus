@@ -17,7 +17,7 @@ export default function ContactPage() {
           <HeaderComp pageName="contact"/>
         </div>
         <div className="flex flex-col items-end justify-start w-full gap-[108px] mx-auto max-w-[1311px]">
-          <div className="flex flex-col items-center justify-start w-[91%] gap-[100px]">
+          <div className="flex flex-col items-center justify-start w-[91%] gap-[100px]" style={{marginRight: "60px"}}>
             <JumbotronContact />
             <div className="flex flex-row justify-start items-center w-full gap-[41px]">
               <ContactForm />

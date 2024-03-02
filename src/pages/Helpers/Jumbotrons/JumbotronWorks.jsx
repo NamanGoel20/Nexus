@@ -3,7 +3,7 @@ import { Img, Heading, Text } from "../../../components";
 
 const JumbotronWorks = () => {
     return (
-        <div className="flex flex-row justify-center w-full p-1 mx-auto bg-green-A100 max-w-[1180px] rounded-[90px]">
+        <div className="flex flex-row justify-center w-full p-1 mx-auto bg-green-A100 max-w-[1180px] rounded-[90px]" style={{marginRight: "220px"}}>
             <div className="flex flex-col items-start justify-start w-[97%] mt-[55px] mx-[22px]">
                 <div className="flex flex-row justify-between items-start w-4/5">
                     <Img
