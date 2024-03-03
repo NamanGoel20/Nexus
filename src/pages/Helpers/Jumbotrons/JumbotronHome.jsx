@@ -2,13 +2,10 @@ import React from "react";
 import { Text, Heading, Img, Button } from "../../../components";
 import { useNavigate } from "react-router-dom";
 
-const CONTACT="contact";
-
-const JumbotronHome = (props) => {
+const JumbotronHome = () => {
     const navigate = useNavigate();
-    const handleClick = (page) => {
-        console.log("click: ",page);
-        navigate("/"+page);
+    const handleClick = () => {
+        navigate("/contact");
     }
     return (
         <div className="h-[646px] w-full relative">
@@ -16,8 +13,8 @@ const JumbotronHome = (props) => {
               <Text as="p" className="w-[42%] mt-[245px] ml-[3px] !text-black-900_60 !leading-[35px]">
                 Maximize your business with a variety of services and services from us
               </Text>
-                <div className="flex flex-row justify-start mb-[83px] gap-6">
-                    <Button size="md" className="font-bold min-w-[201px] rounded-[5px]" onClick={() => handleClick(CONTACT)}>
+                <div className="flex flex-row justify-start mb-[83px] gap-6 z-10">
+                    <Button size="md" className="font-bold min-w-[201px] rounded-[5px]" onClick={() => handleClick()}>
                       Contact Us
                     </Button>
                 </div>
